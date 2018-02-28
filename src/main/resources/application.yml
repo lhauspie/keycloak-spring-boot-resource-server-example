@@ -1,0 +1,16 @@
+keycloak:
+    realm: demo
+    auth-server-url : http://localhost:32768/auth
+    ssl-required : external
+    resource : my-client
+    credentials :
+        secret : 34486f3c-d419-4daf-9308-64fafa9e6dce
+    use-resource-role-mappings : false
+    principal-attribute : preferred_username
+
+logging:
+  level:
+    root: WARN
+    com.lhauspie.example: TRACE
+    org.springframework.security: TRACE
+    org.keycloak.adapters: TRACE
